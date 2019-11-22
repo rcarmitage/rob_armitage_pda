@@ -37,5 +37,4 @@ def self.cards_total(cards)
     # total should be total.to_s
   end
 end
-# this function should be within the CardGame class, not underneath
 ```
