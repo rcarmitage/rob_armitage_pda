@@ -6,10 +6,12 @@
 
 class CardGame
 
-# there is an extra empty line here, should be deleted to minimise white space which has no purpose
+# there should be a def initialize here
+
   def checkforAce(card)
     # function name should be in snake case, so check_for_ace
     if card.value = 1
+      # the = should be ==
       return true
     else
       return false
@@ -29,12 +31,13 @@ end
 # this end is unnecessary and should be deleted
 
 def self.cards_total(cards)
+  # self is unnecessary
   total
   # total should be total = 0
   for card in cards
     total += card.value
     return "You have a total of" + total
-    # total should be total.to_s
+    # total should be total.to_s, and the return statement should be after the end currently on line 41 so the for loop can run through all cards provided
   end
 end
 ```
