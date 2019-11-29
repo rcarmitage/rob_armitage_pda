@@ -5,8 +5,12 @@
 
 class CardGame
 
-  def check_for_ace(card)
-    if card.value = 1
+  def initialize(card_1, card_2)
+
+  end
+
+  def check_for_ace(card1)
+    if card1.value = 1
       return true
     else
       return false
