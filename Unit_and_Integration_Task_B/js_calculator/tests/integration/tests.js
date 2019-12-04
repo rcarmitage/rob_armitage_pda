@@ -89,8 +89,12 @@ describe('calculator functionality', function() {
   // 5. What does the code do in exceptional circumstances? - divide by zero
   it('should show an error message when dividing by zero', function(){
     running_total = element(by.css('#running_total'))
-  
+    element(by.css('#number1')).click();
+    element(by.css('#operator_divide')).click();
+    element(by.css('#number0')).click();
+    element(by.css('#operator_equals')).click();
     expect(running_total.getAttribute('value')).to.eventually.equal('Error - cannot divide by 0')
+    // Added an if statement into the subtract function: returns error message if number entered is 0, otherwise carries on as previously
   })
 
 });
